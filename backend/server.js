@@ -82,4 +82,4 @@ socket.on("ice_candidate", ({ candidate, email }) => {
 
 
 
-server.listen(8000, () => console.log("Server running on port 8000"));
+server.listen(8000,'0.0.0.0', () => console.log("Server running on port 8000"));
