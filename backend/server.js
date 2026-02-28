@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 const io = new Server(server, {
   cors: {
-    origin: "https://meet-video-call-p2-p-tvxm.vercel.app/",
+    origin: "https://meet-video-call-p2-p-tvxm.vercel.app",
   },
 });
 const emailToSocketIdMap = new Map();
