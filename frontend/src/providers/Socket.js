@@ -6,7 +6,7 @@ export const useSocket = () => React.useContext(SocketContext);
 
 export const SocketProvider = ({ children }) => {
   const socket = useMemo(() => {
-    return io("http://localhost:8000", {
+    return io("meet-video-call-p2-p.vercel.app", {
       reconnection: true,
       reconnectionDelay: 1000,
       reconnectionDelayMax: 5000,
